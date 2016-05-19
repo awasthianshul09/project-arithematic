@@ -48,7 +48,7 @@ int main(int argc, char const *argv[])
 	}
 
 	printf("enter some text\n");
-	err=read((int)stdin,buffer,BUFF_SIZE);//using read instead of fgets(just for testing purposes!!!)
+	err=read(stdin,buffer,BUFF_SIZE);//using read instead of fgets
 
 	strcpy(shared_stuff->mem_buff,buffer);
 
